@@ -1,6 +1,6 @@
 # alpine-slack-jenkins-bot
 
-Putting slack-jenkins-bot inside Docker.
+Putting [slack-jenkins-bot](https://github.com/rohitjmathew/slack-jenkins-bot) inside Docker.
 
 ## Testing
 
@@ -11,13 +11,13 @@ Pre-requisites:
 To build a docker image
 
 ```
-docker build -t alpine-hubot .
+docker build -t deployment-bot .
 ```
 
 To run the docker image
 
 ```
-docker run -e HUBOT_SLACK_TOKEN=$slack_token -d alpine-hubot
+docker run -e HUBOT_SLACK_TOKEN=$slack_token -d deployment-bot
 ```
 
 To see your docker logs, run `docker ps` and grab the ID of your bot container then run `docker logs $ID`.
