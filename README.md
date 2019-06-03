@@ -1,7 +1,6 @@
-# alpine-hubot
-[![Build Status](https://travis-ci.org/noqcks/alpine-hubot.svg?branch=master)](https://travis-ci.org/noqcks/alpine-hubot)
+# alpine-slack-jenkins-bot
 
-Putting hubot inside Docker.
+Putting slack-jenkins-bot inside Docker.
 
 ## Testing
 

@@ -1,6 +1,6 @@
 FROM alpine
 
-MAINTAINER Ben Visser <benny@noqcks.io>
+MAINTAINER Rohit Mathew
 
 # Install dependencies
 RUN apk update && apk upgrade \
@@ -22,7 +22,7 @@ USER  hubot
 WORKDIR /hubot
 
 # Install hubot
-RUN yo hubot --owner="Ben Visser <benny@noqcks.io>" --name="dockbot" --description="Roll, roll, rollercoaster" --defaults
+RUN yo hubot --owner="Rohit Mathew" --name="deployment-bot" --description="Bot to run staging deployments from slack." --defaults
 COPY package.json package.json
 RUN npm install
 ADD hubot/hubot-scripts.json /hubot/
